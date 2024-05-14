@@ -1,0 +1,54 @@
+.login_form {
+    display: flex;
+    flex-direction: column; /*Deixa um em baixo do outro, em colunas mesmo*/
+    align-items: center;
+    height: 100vh; /*viewport height*/
+    justify-content: center;
+}
+
+.login_header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.login_header img {
+    width: 300px;
+}
+
+.login_header h1{
+    margin-top: 15px;
+    color: #282829;
+    font-size: 1.7em;
+}
+
+.login_input{
+    border: 2px solid #282828;
+    border-radius:10px;
+    color: #505050;
+    font-size: 1em;
+    margin-bottom: 15px; /*distancia entre o botão*/
+    width: 100%; /*vai pegar 100% da tela mostrada, porém a seguir vamos limitar*/
+    max-width: 300px;
+    outline: none;
+    padding: 12px;
+}
+
+.login_button{ /*Botão habilitado*/
+    background-color: #42d49c;
+    padding: 12px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    max-width: 100px;
+}
+
+.login_button:disabled{ /*botão desabilitado*/
+    background-color: #e7e5e5;
+    color: rgb(175, 173, 173);
+    cursor: auto;
+
+}
